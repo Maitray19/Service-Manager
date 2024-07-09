@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 1em 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.main-content {
+    padding: 2em 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    color: #333;
+    text-decoration: none;
+    width: 250px;
+    height: 150px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.tile:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #333
+    ;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+    </style>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">CRM</a>
+            <div class="navbar-menu">
+                <a href="index.html">Home</a>
+                <a href="service_request.html">Service Request</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Signup</a>
+                <a href="dashboard.php">Dashboards</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="tile-container">
+                <a href="video_editing.html" class="tile">Video Editing</a>
+                <a href="Copy_Writing.html" class="tile">Web-based Software</a>
+                <a href="graphic_designing.html" class="tile">Graphic Designing</a>
+                <a href="Content_Writing.html" class="tile">Content Writing</a>
+                <a href="Copy_Writing.html" class="tile">copy writing</a>
+                <a href="Data_Entry.html" class="tile">Data Entry</a>
+                <a href="Customer_support.html" class="tile">Customer support</a>
+                <a href="Graphic_Designer.html" class="tile">Graphic Designer</a>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 CRM. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

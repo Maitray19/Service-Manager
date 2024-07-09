@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Request</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">CRM</a>
+            <div class="navbar-menu">
+                <a href="index.html">Home</a>
+                <a href="service_request.html">Service Request</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Signup</a>
+                <a href="dashboard.php">Dashboards</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="form-container">
+            <div class="form-box">
+                <h2>Service Request</h2>
+                <form action="connect.php" method="post">
+                    <div class="input-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="requesttype">Type of Request</label>
+                        <select id="requesttype" name="requesttype" required>
+                            <option value="video-editing">Video Editing</option>
+                            <option value="web-software">Web-based Software</option>
+                            <option value="graphic-designing">Graphic Designing</option>
+                            <option value="content-writing">Content Writing</option>
+                            <option value="Data-Entry">Data Entry</option>
+                            <option value="Data-Cleaning">Content Writing</option>
+                            <option value="Sales-Services">Sales Services</option>
+
+                        </select>
+                    </div>
+                    <button type="submit" class="btn">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 CRM. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
